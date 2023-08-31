@@ -1,6 +1,6 @@
 import reactlogo from "./assets/react.svg";
-import Cabecalho from "./components/cabecalho";
-import Conteudo from "./components/Conteudo";
+import Cabecalho from "../aula-rotas/src/components/cabecalho";
+import Conteudo from "../aula-rotas/src/components/Conteudo";
 export default function App() {
   
   
