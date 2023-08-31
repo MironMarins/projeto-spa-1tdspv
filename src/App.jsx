@@ -20,7 +20,6 @@ export default function App() {
       {/* Um rodapé com uma div, uma lista ul com 3 itens e links para redes sociaiis*/}
       <Rodape/>
     
-    </>fdh
-
+    </>
   )
 }
