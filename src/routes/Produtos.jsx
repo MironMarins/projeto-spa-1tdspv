@@ -8,7 +8,23 @@ export default function Produtos() {
 
     document.title = "Lista de Produtos";
 
+    const [listaProdutoLocal, setListaProdutoLocal] = useState([{}])
 
+    useEffect(()=>{
+
+        fetch('http://localhost:5000/produtos',{
+
+          method: 'GET',
+          headers:{
+            'Content-Type': 'application/json',
+          },
+        }).then((response)=> response.json())
+        .then((data)=>{
+            setListaProdutoLocal(data);
+        })
+        .catch((err)=>console.log(err));
+      
+    },[]);
 
     return (
       <div>
